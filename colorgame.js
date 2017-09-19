@@ -39,6 +39,7 @@ function setupSquares(){
 			//compare color to pickedColor
 			if(clickedColor === pickedColor){
 				messageDisplay.textContent = "Correct";
+				messageDisplay.style.color = "steelblue";
 				changeColors(clickedColor);
 				h1.style.backgroundColor = clickedColor;
 				resetButton.textContent = "Play Again?"
@@ -46,6 +47,7 @@ function setupSquares(){
 			else{
 				this.style.backgroundColor = "#232323";
 				messageDisplay.textContent = "Try again";
+				messageDisplay.style.color = "red";
 			}
 		});
 	}
